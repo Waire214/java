@@ -46,6 +46,22 @@ class MethodOverload {
     }
 }
 
+class arrays {
+
+    int num[] = {1,2,3};
+
+    int num1[] = new int[4];
+
+
+
+    public int add(int n1, int n2) {
+        System.out.println("null");
+
+        
+        return n1 + n2;
+    }
+}
+
 public class obj {
     public static void main(String a[]) {
 
@@ -63,7 +79,18 @@ public class obj {
 
         MethodOverload met = new MethodOverload();
         int add1 = met.add(num1, num2);
-
         System.out.println(add1);
+
+        arrays arr = new arrays();
+        System.out.println(arr.num[2]);
+
+        arr.num1[0] = 12;
+        arr.num1[1] = 4;
+        arr.num1[2] = 10;
+        arr.num1[3] = 37;
+        System.out.println(arr.num1[3]);
+        for (int i = 0; i < arr.num1.length; i++) {
+            System.out.println(arr.num1[i]);
+        }
     }
 }
