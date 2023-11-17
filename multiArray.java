@@ -5,6 +5,36 @@ public class multiArray {
 
         jaggedArrays jarr = new jaggedArrays();
         jarr.loop();
+
+        students s1 = new students();
+        s1.rollNo = 3;
+        s1.name = "T";
+        s1.mark = 13;
+
+        students s2 = new students();
+        s2.rollNo = 1;
+        s2.name = "B";
+        s2.mark = 10;
+
+        students s3 = new students();
+        s3.rollNo = 4;
+        s3.name = "N";
+        s3.mark = 19;
+
+        // array of objects
+        students students[] = new students[3];
+        students[0] = s1;
+        students[1] = s2;
+        students[2] = s3;
+
+        for (int i = 0; i < students.length; i++) {
+            System.out.println(students[i].name);
+        }
+        
+        for (students n: students) {
+            System.out.println(n.mark);
+        }
+
     }
 }
 
@@ -60,4 +90,10 @@ class jaggedArrays {
 
         return 1;
     }
+}
+
+class students {
+    int rollNo;
+    String name;
+    int mark;
 }
