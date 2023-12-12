@@ -1,3 +1,5 @@
+package encap;
+
 public class encap {
     public static void main(String[] args) {
         Innerencap human = new Innerencap();
@@ -12,7 +14,7 @@ public class encap {
 }
 
 /**
- * Innerencap
+ * encap.Innerencap
  */
 class Innerencap {
 
